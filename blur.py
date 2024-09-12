@@ -15,9 +15,13 @@ gaussian_blur=cv2.GaussianBlur(image,(7,7),0)
 cv2.imshow("image",gaussian_blur)
 
 #median blur
+median=cv2.medianBlur(image,3)
+cv2.imshow("median",median)
 
 
 
+bilateral=cv2.bilateralFilter(image,5,35,25)
+cv2.imshow("bilateral",bilateral)
 
 
 
